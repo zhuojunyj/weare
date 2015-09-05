@@ -1,0 +1,302 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submitSuccess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="55dp" >
+	        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <!-- 成功提示 -->
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:background="@color/shallow_yellow" >
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="0.5dp"
+	                android:layout_alignParentBottom="true"
+	                android:background="@color/borderColor" />
+	
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="16dp"
+	                android:text="@string/shoppingcart_successtip"
+	                android:textColor="@color/text_color"
+	                android:textSize="13sp" />
+	        </RelativeLayout>
+	        
+	    <!-- 查看订单 -->
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:layout_below="@+id/linearLayout1"
+	        android:layout_centerHorizontal="true" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="0.5dp"
+	            android:layout_alignParentBottom="true"
+	            android:background="@color/borderColor" />
+	
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="15dp"
+	            android:src="@drawable/shoppingcart_icon" />
+	
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_toRightOf="@+id/imageView1"
+	            android:text="@string/shoppingcart_checkorderdetail"
+	            android:textColor="@color/text_color"
+	            android:textSize="15sp" />
+	
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="17dp"
+	            android:src="@drawable/arrow" />
+	    </RelativeLayout>
+	
+	    <!-- 订单信息 -->
+	
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="160dp"
+	        android:layout_below="@+id/relativeLayout1"
+	        android:layout_centerHorizontal="true" >
+	
+	        <TextView
+	            android:id="@+id/orderNumTip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginTop="20dp"
+	            android:text="@string/shoppingcart_ordernum"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/orderNum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/orderNumTip"
+	            android:layout_alignBottom="@+id/orderNumTip"
+	            android:layout_marginLeft="25dp"
+	            android:layout_toRightOf="@+id/orderNumTip"
+	            android:textColor="@color/text_color"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/paymentTip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/orderNumTip"
+	            android:layout_marginTop="15dp"
+	            android:layout_toLeftOf="@+id/orderNum"
+	            android:text="@string/shoppingcart_payment"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/payment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/paymentTip"
+	            android:layout_alignBottom="@+id/paymentTip"
+	            android:layout_alignLeft="@+id/orderNum"
+	            android:textColor="@color/text_color_red"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/deliveryTip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/paymentTip"
+	            android:layout_marginTop="15dp"
+	            android:layout_toLeftOf="@+id/orderNum"
+	            android:text="@string/shoppingcart_delivery"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/delivery"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/deliveryTip"
+	            android:layout_alignBottom="@+id/deliveryTip"
+	            android:layout_alignLeft="@+id/payment"
+	            android:textColor="@color/text_color"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/paywayTip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/deliveryTip"
+	            android:layout_marginTop="15dp"
+	            android:layout_toLeftOf="@+id/orderNum"
+	            android:text="@string/shoppingcart_payway"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/payway"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/paywayTip"
+	            android:layout_alignBottom="@+id/paywayTip"
+	            android:layout_alignLeft="@+id/delivery"
+	            android:textColor="@color/text_color"
+	            android:textSize="14sp" />
+	    </RelativeLayout>
+	
+	    <!-- 支付按钮 -->
+	
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout3"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_below="@+id/relativeLayout2"
+	        android:layout_centerHorizontal="true" >
+	
+	        <View
+	            android:id="@+id/view2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="1dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="13dp"
+	            android:layout_marginRight="13dp"
+	            android:background="@drawable/dotted_line" />
+	
+	        <View
+	            android:id="@+id/view1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="1dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginLeft="13dp"
+	            android:layout_marginRight="13dp"
+	            android:background="@drawable/dotted_line" />
+	
+	        <TextView
+	            android:id="@+id/actualPaymentTip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/view1"
+	            android:layout_centerVertical="true"
+	            android:text="@string/shoppingcart_actualpayment"
+	            android:textColor="@color/text_color"
+	            android:textSize="15sp" />
+	
+	        <TextView
+	            android:id="@+id/actualPayment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/actualPaymentTip"
+	            android:layout_alignBottom="@+id/actualPaymentTip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_toRightOf="@+id/actualPaymentTip"
+	            android:textColor="@color/text_color_red"
+	            android:textSize="15sp" />
+	
+	        <Button
+	            android:id="@+id/goPay"
+	            android:layout_width="140dp"
+	            android:layout_height="40dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/shoppingcart_gopay"
+	            android:text="@string/shoppingcart_instantpay"
+	            android:textColor="@color/white"
+	            android:textSize="16sp" />
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/relativeLayout3"
+	        android:layout_centerHorizontal="true" >
+	
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="14dp"
+	            android:layout_marginTop="11dp"
+	            android:text="@string/shoppingcart_tip3"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView3"
+	            android:layout_below="@+id/textView3"
+	            android:layout_marginTop="5dp"
+	            android:text="@string/shoppingcart_tip4"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/textView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView4"
+	            android:layout_below="@+id/textView4"
+	            android:layout_marginTop="21dp"
+	            android:text="@string/shoppingcart_tip5"
+	            android:textColor="@color/text_color_light"
+	            android:textSize="14sp" />
+	        
+	        <TextView
+	            android:id="@+id/textView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView5"
+	            android:layout_below="@+id/textView5"
+	            android:layout_marginTop="21dp"
+	            android:text="@string/shoppingcart_tip6"
+	            android:textColor="@color/text_color_red"
+	            android:textSize="14sp" />
+	    </RelativeLayout>
+     </LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

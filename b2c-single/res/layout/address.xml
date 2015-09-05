@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp" 
+    android:background="@drawable/member_address"
+    android:layout_marginTop="15dp"
+    android:id="@+id/addrEdit">
+
+    <!-- 收货人 -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:text="刘卓君" />
+
+    <!-- 收货人电话 -->
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginLeft="64dp"
+        android:layout_toRightOf="@+id/name"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:text="15889963368" />
+
+    <!-- 编辑地址 -->
+    <ImageView
+        android:id="@+id/editAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="14dp"
+        android:clickable="true"
+        android:src="@drawable/edit_addr" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/dotted_line"
+        android:layout_marginLeft="8dp" 
+        android:layout_marginRight="8dp"/>
+
+    <!-- 收货地址 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_color_even_light"
+        android:text="广东省广州市天河区新园新村a区巷1号" />
+
+    <!-- 默认地址 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@color/text_color_red"
+        android:text="@string/member_default_addr" />
+
+</RelativeLayout>

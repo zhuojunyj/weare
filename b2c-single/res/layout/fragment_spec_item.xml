@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/spec_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"/>
+
+     <cn.edu.zhku.b2c.cutom.CustomViewGroup
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spec_title"
+        android:layout_below="@+id/spec_title"
+        android:layout_marginTop="15dp">
+           
+    </cn.edu.zhku.b2c.cutom.CustomViewGroup>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/wrapper"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/dotted_line" /> 
+    
+</RelativeLayout>

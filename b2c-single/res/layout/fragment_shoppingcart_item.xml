@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="159dp" 
+    android:layout_marginTop="15dp">
+
+    <!-- <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/borderColor"/> -->
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/borderColor"/>
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product_image"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_marginLeft="22dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/product_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_below="@+id/product_name"
+        android:layout_marginTop="11dp"
+        android:textSize="10sp"
+        android:textColor="@color/text_color_light"/>
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_below="@+id/product_name"
+        android:layout_marginTop="51dp"
+        android:textSize="20sp"
+        android:textColor="@color/text_color_red"/>
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/product_price"
+        android:layout_alignBaseline="@+id/product_price"
+        android:layout_marginLeft="50dp"
+        android:textSize="17sp"
+        android:textColor="@color/text_color_light"/>
+
+    <RelativeLayout
+        android:id="@+id/quantity_wrapper"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/product_spec"
+        android:layout_toRightOf="@+id/product_price"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        android:background="@drawable/login_wrap"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/quantity_btn"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/buy_quantity"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/minus"
+            android:layout_alignParentTop="true" 
+            android:background="@null"
+            android:gravity="center"
+            android:text="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/quantity_btn"
+            android:text="+" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

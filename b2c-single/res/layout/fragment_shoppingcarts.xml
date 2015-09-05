@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#f9f9f9"
+    android:layout_marginTop="50dp">
+
+    <RelativeLayout
+        android:id="@+id/depression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:id="@+id/items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/pop_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/half_transparent"
+        android:visibility="gone">
+        
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:background="@color/white">
+
+            <TextView
+                android:id="@+id/product_total_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="26dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:text="商品总金额：" />
+
+            <TextView
+                android:id="@+id/product_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/product_total_tip"
+                android:layout_toRightOf="@+id/product_total_tip"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_light"
+                android:text="￥561.00" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/product_total_tip"
+                android:layout_below="@+id/product_total_tip"
+                android:layout_marginTop="23dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:text="获得积分：" />
+            
+            <TextView
+                android:id="@+id/integral_obtain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:textColor="#ff9900"
+                android:text="5618" />
+
+            <ImageView
+                android:id="@+id/zhijiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/zhijiang" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/zhijiang"
+                android:layout_alignLeft="@+id/integral_obtain"
+                android:textColor="@color/text_color_light"
+                android:textSize="12sp"
+                android:text="订单满500免运费" />
+            
+         </RelativeLayout>
+    </FrameLayout>
+        
+    <!-- 结算 -->
+	 <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="67dp"
+          android:layout_centerHorizontal="true"
+          android:background="#f9f9f9"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="50dp">
+        
+	     <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/borderColor"/>
+	     
+	     <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/borderColor"/>
+
+	     <ImageView
+	         android:id="@+id/detail"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_centerVertical="true"
+	         android:layout_marginLeft="18dp"
+	         android:src="@drawable/shoppingcart_icon" />
+
+          <ImageView
+	         android:id="@+id/select_all"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_centerVertical="true"
+	         android:layout_marginLeft="18dp"
+	         android:src="@drawable/shoppingcart_all_select_s" 
+	         android:visibility="gone"/>
+	          
+	     <TextView
+	         android:id="@+id/heji"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginTop="14dp"
+	         android:layout_marginLeft="35dp"
+	         android:layout_toRightOf="@+id/detail"
+	         android:textSize="17sp"
+	         android:textColor="@color/text_color_red"/>
+
+	     <TextView
+	         android:id="@+id/youhui"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/heji"
+	         android:layout_marginLeft="20dp"
+	         android:layout_below="@+id/heji"
+	         android:layout_marginTop="9dp"
+	         android:textSize="14sp"
+	         android:textColor="@color/text_color_light"/>
+
+	     <Button
+	         android:id="@+id/gopay"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerVertical="true"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="16dp"
+	         android:background="@drawable/shoppingcart_gopay"
+	         android:textColor="@color/text_color_white"
+	         android:textSize="17sp"
+	         android:text="@string/shoppingcart_gopay" />
+	     
+	     <Button
+	         android:id="@+id/godelete"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerVertical="true"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="16dp"
+	         android:background="@drawable/shoppingcart_delete_btn"
+	         android:visibility="gone"/>
+
+      </RelativeLayout>
+</RelativeLayout>

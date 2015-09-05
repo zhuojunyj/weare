@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.zhku.b2c"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />    
+
+    <application
+        android:name=".constant.App"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/noTitleBar" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".member.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".member.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".member.AddrListActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_addr_list" >
+        </activity>
+        <activity
+            android:name=".member.NewAddressActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_new_address" >
+        </activity>
+        <activity
+            android:name=".member.OrderListActivity"
+            android:label="@string/title_activity_order_list" >
+        </activity>
+        <activity
+            android:name=".cate.CateSubActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_cate_sub_actvity" >
+        </activity>
+        <activity
+            android:name=".cate.ProductListActivity"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name=".cate.FilterActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_filter" >
+        </activity>
+        <activity
+            android:name=".popup.PopupActivity"
+            android:label="@string/title_activity_popup"
+            android:theme="@style/HalfTransparent" >
+        </activity>
+        <activity
+            android:name=".cate.ProductActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name=".cate.MultiSpecActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_multi_spec"
+            android:launchMode="singleTop"
+            android:theme="@style/NoAnimation" >
+        </activity>
+        <activity
+            android:name="cn.edu.zhku.b2c.cate.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail" >
+        </activity>
+        <activity
+            android:name=".shoppingCart.SubmitOrderActivity"
+            android:label="@string/title_activity_submit_order" >
+        </activity>
+        <activity
+            android:name="cn.edu.zhku.b2c.shoppingCart.SubmitSuccessActivity"
+            android:label="@string/title_activity_submit_success" >
+        </activity>
+        
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+     
+        <!-- alipay sdk end -->
+    </application>
+
+</manifest>

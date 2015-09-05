@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:text="共有待付款" />
+
+    <TextView
+        android:id="@+id/order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descr"
+        android:layout_alignBottom="@+id/descr"
+        android:layout_toRightOf="@+id/descr"
+        android:layout_marginLeft="7dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_red"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/order_num"
+        android:layout_alignBottom="@+id/order_num"
+        android:layout_toRightOf="@+id/order_num"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:text="@string/member_order_unit" />
+
+</RelativeLayout>

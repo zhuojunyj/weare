@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="12dp" 
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/product_list_item_bg">
+
+	    <ImageView
+	        android:id="@+id/prd_img"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="14dp"
+	        android:layout_marginTop="15dp"
+	        android:src="@drawable/nopic"/>
+	
+	    <TextView
+	        android:id="@+id/prd_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/prd_img"
+	        android:layout_toRightOf="@+id/prd_img"
+	        android:layout_marginLeft="17dp"
+	        android:textSize="14sp"
+	        android:textColor="@color/text_color"/>
+	
+	    <TextView
+	        android:id="@+id/prd_descr"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/prd_title"
+	        android:layout_below="@+id/prd_title"
+	        android:layout_marginTop="8dp"
+	        android:textSize="11sp"
+	        android:textColor="@color/text_color_even_light"/>
+	
+	    <TextView
+	        android:id="@+id/prd_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/prd_descr"
+	        android:layout_below="@+id/prd_title"
+	        android:layout_marginTop="51dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color_red"/>
+	
+	    <TextView
+	        android:id="@+id/buy_times"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/prd_price"
+	        android:layout_alignBottom="@+id/prd_price"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/prd_price"
+	        android:textColor="@color/text_color_even_light"
+	        android:textSize="8sp"/>
+   	</RelativeLayout>
+</RelativeLayout>

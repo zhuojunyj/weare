@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ff9933</color>
+    <color name="grey">#cccccc</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#007aff</color>
+    <color name="borderColor">#c1c1c1</color>
+    <color name="loginBtnColor_n">#ff9200</color>
+    <color name="loginBtnColor_s">#ffac5a</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color_white">#fff</color>
+    <color name="text_color_light">#666666</color>
+    <color name="text_color_orange">#ff6600</color>
+    <color name="text_color_even_light">#999999</color>
+    <color name="text_color_red">#ff0000</color>
+    <color name="btn_color_red">#ff3300</color>
+    <color name="bak_color">#f6f6f6</color>
+    <color name="bak_color1">#f8f8f8</color>
+    <color name="bak_color2">#f7f7f7</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#a0000000</color>
+    <color name="shallow_yellow">#fffde4</color>
+</resources>

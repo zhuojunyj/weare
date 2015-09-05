@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="104dp" 
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dotted_line"/>
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/productImage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/productImage"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/productName"
+        android:layout_below="@+id/productName"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/text_color_red"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/price"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/price"
+        android:textSize="13sp"
+        android:textColor="@color/text_color_light"/>
+
+</RelativeLayout>
